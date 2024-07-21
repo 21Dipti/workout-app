@@ -71,7 +71,7 @@ ng serve
 
 ### Viewing Graphs
 
-- click on the name in the list and the webpage will load displaying the graphs.
+- Click on the name in the list and the webpage will load displaying the graphs.
 
 ## Code Structure
 
