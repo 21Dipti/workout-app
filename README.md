@@ -1,27 +1,93 @@
-# WorkoutApp
+# Workout Tracker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
+This project is a workout tracking application built with Angular. It allows users to track their workout activities, view workout statistics, and filter workout data based on user names and workout types. The application utilizes local storage to persist data.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. **Track Workouts**
+   - Add new workout sessions for users.
+   - Store workout data including workout type, duration, and total time.
 
-## Code scaffolding
+2. **View Workouts**
+   - Display a list of users and their workout details.
+   - Paginate through the list of workouts.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. **Filter Workouts**
+   - Filter workouts by user name.
+   - Filter workouts by workout type.
 
-## Build
+4. **Display Graphs**
+   - Display workout data in graphical format using Chart.js.
+   - Show different types of workouts and their durations.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Getting Started
 
-## Running unit tests
+### Prerequisites
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Node.js and npm installed on your machine.
+- Angular CLI installed globally (`npm install -g @angular/cli`).
 
-## Running end-to-end tests
+### Installation
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Clone the repository:
 
-## Further help
+```bash
+git clone https://github.com/your-username/workout-tracker.git
+cd workout-tracker
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the application:
+
+```bash
+ng serve
+```
+
+4. Open your browser and navigate to `http://localhost:4200`.
+
+## Usage
+
+### Adding Workouts
+
+- Navigate to the "Add Workout" page.
+- Enter the user's name, workout type, and duration.
+- Click "Add Workout" to save the workout data.
+
+### Viewing Workouts
+
+- Navigate to the "Workout List" page.
+- View the list of users and their workout details.
+- Use the pagination buttons to navigate through the list.
+
+### Filtering Workouts
+
+- Use the "Search by Name" input to filter workouts by user name.
+- Use the "Filter by Workout Type" input to filter workouts by workout type.
+
+### Viewing Graphs
+
+- Click on the name in the list and the webpage will load displaying the graphs.
+
+## Code Structure
+
+- `src/app/workout.service.ts`: Service for managing workout data and user information.
+- `src/app/workout-list/workout-list.component.ts`: Component for displaying and filtering the list of workouts.
+- `src/app/user-graph/user-graph.component.ts`: Component for displaying workout data in graphical format.
+
+## Styling
+
+The application uses Tailwind CSS for styling. The necessary Tailwind CSS classes are applied directly in the HTML files.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request if you have any suggestions or improvements.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
