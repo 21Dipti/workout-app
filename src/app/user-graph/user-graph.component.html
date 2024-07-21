@@ -1,0 +1,13 @@
+<div style="display: block; text-align: center;">
+  <h2>{{ chartTitle }}</h2>
+  <p>{{ chartDescription }}</p>
+
+  <div style="display: block; width: 60%; margin: 0 auto;">
+    <canvas baseChart
+            [data]="lineChartData"
+            [options]="lineChartOptions"
+            [legend]="lineChartLegend"
+            chartType="line">
+    </canvas>
+  </div>
+</div>

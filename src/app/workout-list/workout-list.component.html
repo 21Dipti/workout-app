@@ -1,0 +1,29 @@
+<div class="container">
+  <h2>Workout List</h2>
+  <div>
+    <label for="search">Search by Name:</label>
+    <input id="search" type="text" (input)="onNameSearch($event)" placeholder="Search by name">
+    <label for="search" style="margin-left: 10%;">Filter Workouts:</label>
+    <input id="search" type="text" (input)="onSearchChange($event)" placeholder="Filter by workout type">
+  </div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Number of Workouts</th>
+        <th>Time (minutes)</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+  </table>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li><button (click)="prevPage()" class="btn btn-outline-primary">Previous</button></li>
+      <li><span class="btn btn-outline-primary">Page {{ page }}</span></li>
+      <li><button (click)="nextPage()" class="btn btn-outline-primary">Next</button></li>
+    </ul>
+  </nav>
+  
