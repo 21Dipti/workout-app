@@ -33,8 +33,8 @@ export class WorkoutListComponent implements OnInit {
     const endIndex = startIndex + this.itemsPerPage;
     const pageData = this.filteredData.slice(startIndex, endIndex);
   
-    const tbody = document.getElementsByTagName('tbody')[0]; // Assuming there's only one tbody element
-    tbody.innerHTML = ''; // Clear existing rows
+    const tbody = document.getElementsByTagName('tbody')[0]; 
+    tbody.innerHTML = ''; 
   
     for (let index = 0; index < pageData.length; index++) {
       const ele0 = document.createElement('tr');
@@ -81,6 +81,7 @@ export class WorkoutListComponent implements OnInit {
   }
   onSearchChange(event: Event) {
     const target = event.target as HTMLInputElement;
+    console.log(target);
     const filterValue = target.value.toLowerCase();
     if (filterValue !== '') {
       this.filteredData = this.workoutData.filter(workout =>

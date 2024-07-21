@@ -98,7 +98,7 @@ export class WorkoutService {
     localStorage.setItem('oldWorkoutsAdded', JSON.stringify(this.oldWorkoutsAdded));
   }
 
-  private loadWorkouts(): void {
+  public loadWorkouts(): void {
     const storedWorkouts = localStorage.getItem('workouts');
     const storedUsers = localStorage.getItem('users');
     const storedOldWorkoutsAdded = localStorage.getItem('oldWorkoutsAdded');
